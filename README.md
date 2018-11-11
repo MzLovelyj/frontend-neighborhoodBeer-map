@@ -116,7 +116,7 @@ In this case the site will be hosted at [http://localhost:5000](http://localhost
 
 ## Adding required Foursquare and Google Maps credentials
 
-The app will not run until you add Foursquare and Google Map keys to the project. They should be stored in the `credentials.js` file in the `data` folder.
+The app will not run until you add Foursquare and Google Map keys to the project. They should be stored in the `data` folder.
 
 ### Foursquare
 
