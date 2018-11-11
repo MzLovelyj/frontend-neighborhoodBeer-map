@@ -148,6 +148,8 @@ Choose the Maps platform and enable "Google Maps Platform". To protect your API 
 - [Foursquare API - Venue Details](https://developer.foursquare.com/docs/api/venues/details)
 - [Beer favicon.ico](https://www.freefavicon.com/freefavicons/food/iconinfo/beer-152-270546.html)
 - [Beer Map-Marker](https://www.iconfinder.com/icons/1463945/bar_beer_drink_location_map_pin_icon)
+https://codeburst.
+- [github-pages walk through](https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d)
 - [Map styling](http://www.mapstylr.com/map-style-editor/)
 
 ### Udacity Resources:
