@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Place from "./Place";
-import { getFSLocations, getFSDetails } from "../apis/foursquare";
+import BeerSpots from './BeerSpots';
+import { getFSLocations, getFSDeets } from "../apis/foursquare";
 import {
   checkData,
   buildInfoContent,
   buildErrorContent
 } from "../utils/helpers";
-import foodIcon from "../images/beer-marker.png";
+import beerIcon from "../images/beer-marker.png";
 import spinner from "../images/circles-loader.svg";
 import PropTypes from "prop-types";
 
@@ -46,7 +46,13 @@ class ListView extends Component {
 
     places.forEach(location => {
       const position = {
-        lat: location.location.lat,
+        _lat: location.location.lat,
+        get lat() {
+          return this._lat;
+        },
+        set lat(value) {
+          this._lat = value;
+        },
         lng: location.location.lng
       };
 
@@ -55,20 +61,20 @@ class ListView extends Component {
         map,
         title: location.name,
         id: location.id,
-        icon: foodIcon
+        icon: beerIcon
       });
 
       bounds.extend(position);
 
-      location.marker.addListener("click", function() {
+      location.marker.addListener("click", function () {
         const marker = this;
 
         // bounce marker three times then stop
         marker.setAnimation(window.google.maps.Animation.BOUNCE);
-        setTimeout(() => marker.setAnimation(null), 2100);
+        setTimeout(() => marker.setAnimation(null), 1900);
 
         // get venue details and display in infowindow
-        getFSDetails(marker.id)
+        getFSDeets(marker.id)
           .then(data => {
             checkData(marker, data);
             buildInfoContent(marker);
@@ -128,7 +134,7 @@ class ListView extends Component {
     if (apiReturned && !filteredPlaces) {
       return <div> Foursquare API request failed. Please try again later.</div>;
 
-      // API request returns successfully
+      // Foursqaure API request return successfully will display
     } else if (apiReturned && filteredPlaces) {
       return (
         <div className="list-view">
@@ -143,16 +149,16 @@ class ListView extends Component {
             tabIndex={listOpen ? "0" : "-1"}
           />
           {apiReturned && filteredPlaces.length > 0 ? (
-            <ul className="places-list">
+            <ul className="beerList">
               {filteredPlaces.map((place, id) => (
-                <Place key={place.id} place={place} listOpen={listOpen} />
+                <BeerSpots key={place.id} place={place} listOpen={listOpen} />
               ))}
             </ul>
           ) : (
-            <p id="filter-error" className="empty-input">
-              No places match filter
+              <p id="filter-error" className="empty-input">
+                No places match filter
             </p>
-          )}
+            )}
         </div>
       );
 
@@ -160,7 +166,7 @@ class ListView extends Component {
     } else {
       return (
         <div className="loading-fs">
-          <h4 className="loading-message">Loading Breweries....</h4>
+          <h4 className="loading-message">Loading Breweries ...</h4>
           <img src={spinner} className="spinner" alt="loading indicator" />
         </div>
       );

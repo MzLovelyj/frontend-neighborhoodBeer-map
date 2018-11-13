@@ -8,7 +8,6 @@ body {
 
 .list {
   background: #fff;
-  background: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   padding: 20px;
   position: absolute;
@@ -17,6 +16,7 @@ body {
   -webkit-transform: translate(-260px, 0);
   transform: translate(-300px, 0);
   transition: transform 0.5s ease;
+  /*Allows to show Google on the left corner*/
   width: 260px;
   z-index: 5;
 }
@@ -37,7 +37,7 @@ font: bold 34px/42px;
   max-width: 100%;
 }
 
-.places-list {
+.beerList {
   height: 400px;
   list-style-type: none;
   overflow-x: hidden;
@@ -46,9 +46,10 @@ font: bold 34px/42px;
 }
 
 .place {
-  margin: 10px 0;
+  margin: 5px 5px;
 }
 
+/*Search Box*/
 .query {
   border: 5px solid #fff;
   border-radius: 10px;
@@ -115,11 +116,13 @@ font: bold 34px/42px;
   text-align: center;
 }
 
-/* infowindow */
+/* info window for the Beer spots on the map Card */
 
 .place {
+  text-align: center;
   display: flex;
   flex-wrap: nowrap;
+  border: #4C1A29;
 }
 
 .place-title,
@@ -134,7 +137,7 @@ font: bold 34px/42px;
 }
 
 .place-price {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0 0 10px 10px;
 }
@@ -145,17 +148,20 @@ font: bold 34px/42px;
   text-decoration: none;
 }
 
+/*Location Info*/
 .place-contact,
 .place-data,
-.place-tip,
 .place-phone {
-  font-size: 14px;
+  font-size: 15px;
 }
 
+/*Cust tip may change over time.*/
 .place-tip {
   font-style: italic;
+  font-size: 18px;
 }
 
+/*Read More link*/
 .place-link {
   color: #153B2E;
   display: block;
@@ -167,6 +173,7 @@ font: bold 34px/42px;
   text-decoration: none;
 }
 
+/*Read More link*/
 .place-link:hover,
 .place-phone:hover {
   color: #686868;
@@ -202,7 +209,7 @@ font: bold 34px/42px;
     display: none;
   }
 
-  .places-list {
+  .beerList {
     height: 60vh;
   }
 
