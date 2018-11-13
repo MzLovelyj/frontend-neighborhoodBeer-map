@@ -1,7 +1,7 @@
 {
   "main.css": "/frontend-neighborhoodBeer-map/static/css/main.726fc8fc.chunk.css",
-  "main.js": "/frontend-neighborhoodBeer-map/static/js/main.0fceaa8b.chunk.js",
-  "main.js.map": "/frontend-neighborhoodBeer-map/static/js/main.0fceaa8b.chunk.js.map",
+  "main.js": "/frontend-neighborhoodBeer-map/static/js/main.837e4978.chunk.js",
+  "main.js.map": "/frontend-neighborhoodBeer-map/static/js/main.837e4978.chunk.js.map",
   "static/js/1.845a2353.chunk.js": "/frontend-neighborhoodBeer-map/static/js/1.845a2353.chunk.js",
   "static/js/1.845a2353.chunk.js.map": "/frontend-neighborhoodBeer-map/static/js/1.845a2353.chunk.js.map",
   "runtime~main.js": "/frontend-neighborhoodBeer-map/static/js/runtime~main.0069d7e7.js",
@@ -10,6 +10,6 @@
   "static/media/circles-loader.svg": "/frontend-neighborhoodBeer-map/static/media/circles-loader.1cbd2e08.svg",
   "static/media/foursquare.png": "/frontend-neighborhoodBeer-map/static/media/foursquare.e7dda514.png",
   "index.html": "/frontend-neighborhoodBeer-map/index.html",
-  "precache-manifest.7bd611804e19f1d7fddcdb3b768384ea.js": "/frontend-neighborhoodBeer-map/precache-manifest.7bd611804e19f1d7fddcdb3b768384ea.js",
+  "precache-manifest.78f2ac9ec98f1b8acb45b2c96f8ef429.js": "/frontend-neighborhoodBeer-map/precache-manifest.78f2ac9ec98f1b8acb45b2c96f8ef429.js",
   "service-worker.js": "/frontend-neighborhoodBeer-map/service-worker.js"
 }
