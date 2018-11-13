@@ -17,7 +17,7 @@ const sortName = (a, b) => {
 // url and params
 const fSURL = "https://api.foursquare.com/v2/venues/";
 const VERS = "20181109";
-const RADIUS = "100000";
+const RADIUS = "1250";
 const categories = {
   //The miami Breweries Id from the Foursquare API Documentation 
   Breweries: "50327c8591d4c4b30a586d5d"
