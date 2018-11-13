@@ -28,7 +28,7 @@ const CATEGORY_ID = Object.keys(categories).map(cat => categories[cat]);
 export const getFSLocations = mapCenter => {
   const requestURL = `${fSURL}search?ll=${mapCenter.lat},${
     mapCenter.lng
-  }&client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&v=${VERS}&categoryId=${CATEGORY_ID}&radius=${RADIUS}&limit=50`;
+    }&client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&v=${VERS}&categoryId=${CATEGORY_ID}&radius=${RADIUS}&limit=50`;
   return fetch(requestURL)
     .then(response => {
       if (!response.ok) {

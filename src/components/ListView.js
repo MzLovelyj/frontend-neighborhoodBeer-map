@@ -160,7 +160,7 @@ class ListView extends Component {
     } else {
       return (
         <div className="loading-fs">
-          <h4 className="loading-message">Loading Restaurants...</h4>
+          <h4 className="loading-message">Loading Breweries....</h4>
           <img src={spinner} className="spinner" alt="loading indicator" />
         </div>
       );
