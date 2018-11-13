@@ -113,5 +113,5 @@ class App extends Component {
 
 //google map script that's required for Map to appear. 
 export default scriptLoader([
-  `https://maps.googleapis.com/maps/api/js?key=${MAP_KEY}&callback=initMap`
+  `https://maps.googleapis.com/maps/api/js?key=${MAP_KEY}`
 ])(App);
