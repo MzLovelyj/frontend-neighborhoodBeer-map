@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/frontend-neighborhoodBeer-map/precache-manifest.2f0b8f767ac9e960dbdcafd73b2d5531.js"
+  "/frontend-neighborhoodBeer-map/precache-manifest.3b48d9163d335c2a9c8343623c63fed2.js"
 );
 
 workbox.clientsClaim();

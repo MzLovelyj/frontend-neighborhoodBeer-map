@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/frontend-neighborhoodBeer-map/static/js/runtime~main.0069d7e7.js"
   },
   {
-    "revision": "1083deab19fa5d7bb810",
-    "url": "/frontend-neighborhoodBeer-map/static/js/main.1083deab.chunk.js"
+    "revision": "4f65810aeb37ac5b24a6",
+    "url": "/frontend-neighborhoodBeer-map/static/js/main.4f65810a.chunk.js"
   },
   {
     "revision": "845a235301a9671c6917",
     "url": "/frontend-neighborhoodBeer-map/static/js/1.845a2353.chunk.js"
   },
   {
-    "revision": "1083deab19fa5d7bb810",
+    "revision": "4f65810aeb37ac5b24a6",
     "url": "/frontend-neighborhoodBeer-map/static/css/main.726fc8fc.chunk.css"
   },
   {
-    "revision": "c1f48267c8fe39d5537d98645a57d20d",
+    "revision": "3a19884a11f8ceea027d266ad42b506b",
     "url": "/frontend-neighborhoodBeer-map/index.html"
   }
 ];
