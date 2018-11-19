@@ -23,4 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 #Personal Data Ish
+
 /src/data/credentials.js
